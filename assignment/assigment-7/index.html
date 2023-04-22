@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My form</title>
+        <style></style>
+    </head>
+    <body>
+        <h1 style="text-align: center; color: rgb(210, 124, 167)">
+            Register to our company
+        </h1>
+
+        <hr />
+        <h2>Personal information</h2>
+        <form>
+            <label for="fullName">Full name</label>
+            <input
+                type="text"
+                required
+                id="textInput"
+                placeholder="Full Name"
+                name="fullName
+                "
+                autofocus
+            />
+            <label for="emailInput">Email address</label>
+            <input
+                type="email"
+                id="emailInput"
+                required
+                placeholder="Email"
+                name="Email"
+            />
+            <label for="phoneInput">Phone number</label>
+            <input
+                type="tel"
+                id="phone"
+                required
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                name="tel"
+                placeholder="Phone number"
+            />
+            <label for="dobInput">Date of birthd</label>
+            <input
+                type="date"
+                required
+                id="date"
+                name="birthDate"
+                max="01-01-1945"
+                min="01-01-2000"
+            />
+            <label for="submitInput"></label>
+            <input
+                type="submit"
+                id="submit"
+                placeholder="Submit"
+                name="submitInput"
+            />
+            <p>What is your gender</p>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <hr />
+        </form>
+        <form></form>
+    </body>
+</html>

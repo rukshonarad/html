@@ -13,8 +13,8 @@
         </form>
 
         <form>
-            <label for="tel"> Add phone number</label>
-            <input type="tel" id="tel" />
+            <label for="tel">Add phone number</label>
+            <input type="tel" id="tel" pattern="[0-9]{3}" />
         </form>
         <form>
             <label for="url">Serch here</label>
@@ -23,7 +23,7 @@
         <form>
             Brooklyn collage
             <label for="radio"></label>
-            <input type="radio" name="radio" />
+            <input type="radio" name="radio" required />
             Kings borough
             <label for="radio"></label>
             <input type="radio" name="radio" />
@@ -33,7 +33,11 @@
         </form>
         <form>
             <label for="Age">Age</label>
-            <input type="Age" id="age" min="18" max="45" />
+            <input type="Age" id="age" min="18" max="45" required />
         </form>
+        <div>
+            <label for="submitInput">Sign Up</label>
+            <input type="submit" value="Sign in" />
+        </div>
     </body>
 </html>

@@ -134,7 +134,7 @@
                 <input
                     type="url"
                     id="urlInput"
-                    name="urlInput"
+                    name="url"
                     required
                     pattern="https://*"
                 />
@@ -153,6 +153,35 @@
                 />
                 <label for="commentsInput">Comments</label>
                 <textarea name="comments" id="commentsInput"></textarea>
+            </div>
+            <hr />
+            <div>
+                <h2 style="text-align: center">Schedule</h2>
+                <label for="timeInput">Preferred Meeting Time</label>
+                <input type="time" id="timeInput" name="time" />
+                <label for="weekInput"> Preferred Meeting Day </label>
+                <input type="week" id="weekInput" name="week" />
+                <label for="monthInput">Preferred Meeting Month</label>
+                <input type="month" id="monthInput" name="month" />
+            </div>
+            <hr />
+            <div>
+                <h2 style="text-align: center">Search</h2>
+                <label for="serchInput">Search for articles</label>
+                <input type="search" id="serchInput" name="search" />
+                <hr />
+                <h2 style="text-align: center">Submit and Reset</h2>
+                <label for="submitInput"> Submit</label>
+                <input type="submit" id="submitInput" name="submit" />
+                <label for="resetInput">Reset</label>
+                <input type="reset" id="resetInput" name="reset" />
+                <label for="submitInput">Submit Now</label>
+                <button>
+                    Submit Now <img src="./submit.png" alt="submit" />
+                </button>
+                <a href="https://turantech.com/">
+                    <img src="./turantech.png" alt=""
+                /></a>
             </div>
         </form>
     </body>

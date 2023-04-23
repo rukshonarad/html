@@ -37,14 +37,9 @@
                 />
             </div>
             <div>
-                <label for="phoneNumberInput">Phone number</label>
-                <input
-                    type="tel"
-                    placeholder="Phone"
-                    id="phoneNumberInput"
-                    name="phoneNumberInput"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                />
+                <label for="telInput">Phone number</label>
+                <input type="tel" placeholder="Phone" id=telInput"
+                name="phoneNumbe" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
             </div>
             <div>
                 <label for="dobInput">Date of birthd</label>
@@ -143,6 +138,21 @@
                     required
                     pattern="https://*"
                 />
+            </div>
+            <hr />
+            <h2 style="text-align: center">Feedback</h2>
+            <div class="feedback">
+                <label for="rangeInput">Satisfaction Rating</label>
+                <input
+                    type="range"
+                    name="satisfactionRange"
+                    id="rangeInput"
+                    min="1"
+                    max="20"
+                    step="3"
+                />
+                <label for="commentsInput">Comments</label>
+                <textarea name="comments" id="commentsInput"></textarea>
             </div>
         </form>
     </body>

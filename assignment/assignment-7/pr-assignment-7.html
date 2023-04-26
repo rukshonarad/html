@@ -1,189 +1,180 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Inputs</title>
+        <title>Assignment-7</title>
         <style></style>
     </head>
     <body>
         <form>
-            <h1 style="text-align: center; color: rgb(210, 124, 167)">
-                Register to our company
-            </h1>
+            <h1 style="text-align: center">Register to our company</h1>
             <hr />
             <h2 style="text-align: center">Personal information</h2>
-            <div>
-                <label for="fullName">Full name</label>
-                <input
-                    type="text"
-                    required
-                    id="textInput"
-                    placeholder="Full Name"
-                    name="fullName"
-                    autofocus
-                />
-            </div>
-            <div>
-                <label for="emailInput">Email address</label>
-                <input
-                    type="email"
-                    id="emailInput"
-                    required
-                    placeholder="Email"
-                    name="Email"
-                />
-            </div>
-            <div>
-                <label for="telInput">Phone number</label>
-                <input type="tel" placeholder="Phone" id=telInput"
-                name="phoneNumbe" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-            </div>
-            <div>
-                <label for="dobInput">Date of birthd</label>
-                <input
-                    type="date"
-                    required
-                    id="date"
-                    name="birthDate"
-                    max="01-01-1945"
-                    min="01-01-2000"
-                />
-                <label for="ageInput">Age</label>
-                <input
-                    type="number"
-                    max="60"
-                    min="20"
-                    id="number"
-                    name="age"
-                    step="1"
-                />
-            </div>
 
-            <div>
-                <p>What is your gender?</p>
-                <label for="female">Female</label>
-                <input type="radio" id="female" name="gender" value="female" />
-                <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" value="male" />
-                <hr />
-            </div>
+            <label for="fullNameInput">Full name</label>
+            <input
+                type="text"
+                required
+                id="fullNameInput"
+                placeholder="Full Name"
+                name="fullName"
+                autofocus
+            />
+            <br />
+
+            <label for="emailInput">Email address</label>
+            <input
+                type="email"
+                id="emailInput"
+                required
+                placeholder="Email"
+                name="email"
+            />
+            <br />
+
+            <label for="phoneInput">Phone number</label>
+            <input
+                type="tel"
+                placeholder="Phone number"
+                id="phoneInput"
+                name="phoneNumer"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                autofocus
+            />
+            <br />
+
+            <label for="dobInput">Date of birthd</label>
+            <input
+                type="date"
+                required
+                id="dobInput"
+                name="dob"
+                max="01-01-1945"
+                min="01-01-2000"
+            />
+            <label for="ageInput">Age</label>
+            <input
+                type="number"
+                max="60"
+                min="20"
+                id="ageInput"
+                name="age"
+                step="1"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+            <br />
+
+            <p>What is your gender?</p>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" />
+            <hr />
+
             <h2 style="text-align: center">Account details</h2>
             <hr />
-            <div>
-                <label for="textInput">User Name</label>
-                <input
-                    type="text"
-                    id="text"
-                    required
-                    name="userName"
-                    placeholder="User name"
-                />
-            </div>
-            <div>
-                <label for="passwordInput">Password:</label>
-                <input
-                    type="password"
-                    id="password"
-                    required
-                    placeholder="Password"
-                    name="password"
-                />
-            </div>
-            <div>
-                <label for="hiddenInput">Secret massage:</label>
-                <input type="hidden" id="" name="secretMassage" value="3487" />
-            </div>
-            <div>
-                <label for="colorInput"> Color:</label>
-                <input type="color" id="color" required name="favoriteColor" />
-            </div>
-            <div>
-                <label for="checkboxInput">Newsletter Subscription </label>
-                <input
-                    type="checkbox"
-                    required
-                    id="checkboxInput"
-                    name="Subscription"
-                />
-            </div>
-            <div>
-                <label for="LanguageInput">Preferred Language</label>
-                <select name="preferredLanguage" id="LanguageInput">
-                    <option value="English">English</option>
-                    <option value="German">German</option>
-                    <option value="Arabic">Arabic</option>
-                    <option value="Mandarin">Mandarin</option>
-                    <option value="Russian">Russian</option>
-                    <option value="French">French</option>
-                </select>
-            </div>
 
-            <div>
-                <label for="avatarInput">Profile Picture</label>
-                <input
-                    type="file"
-                    name="avatar"
-                    id="avatarInput"
-                    accept="image/*"
-                />
-            </div>
-            <div>
-                <label for="urlInput">Location</label>
-                <input type="url" id="urlInput" name="url" required />
-                <label for="homepage">Add your homepage:</label>
-                <input type="url" id="homepage" name="homepage" />
-            </div>
+            <label for="textInput">User Name</label>
+            <input
+                type="text"
+                id="textInput"
+                required
+                name="userName"
+                placeholder="User Name"
+            />
+            <br />
+
+            <label for="passwordInput">Password:</label>
+            <input
+                type="password"
+                id="passwordInput"
+                required
+                placeholder="Password"
+                name="password"
+            />
+
+            <label for="colorInput">Color:</label>
+            <input type="color" id="colorInput" required name="favoriteColor" />
+
+            <label for="checkboxInput">Newsletter Subscription </label>
+            <input
+                type="checkbox"
+                required
+                id="checkboxInput"
+                name="Subscription"
+            />
+            <br />
+
+            <label for="languageSelect">Preferred Language</label>
+            <select name="preferredLanguage" id="languageSelect">
+                <option value="English">English</option>
+                <option value="German">German</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Mandarin">Mandarin</option>
+                <option value="Russian">Russian</option>
+                <option value="French">French</option>
+            </select>
+            <br />
+
+            <label for="avatarInput">Profile Picture</label>
+            <input type="file" name="avatar" id="avatarInput" />
+            <br />
+
+            <label for="urlInput">Location</label>
+            <input type="url" id="urlInput" name="location" required />
+            <label for="homepageInput">Add your homepage:</label>
+            <input type="url" id="homepageInput" name="homepage" />
+            <br />
             <hr />
             <h2 style="text-align: center">Feedback</h2>
-            <div class="feedback">
-                <label for="rangeInput">Satisfaction Rating</label>
-                <input
-                    type="range"
-                    name="satisfactionRange"
-                    id="rangeInput"
-                    min="1"
-                    max="20"
-                    step="3"
-                />
-                <br />
-                <label for="commentsInput">Comments</label>
-                <textarea
-                    name="comments"
-                    id="commentsInput"
-                    cols="30"
-                    rows="2"
-                ></textarea>
-            </div>
+
+            <label for="rangeInput">Satisfaction Rating</label>
+            <input
+                type="range"
+                name="satisfactionRange"
+                id="rangeInput"
+                min="1"
+                max="20"
+                step="3"
+            />
+            <br />
+            <label for="commentsTextarea">Comments</label>
+            <textarea
+                name="comments"
+                id="commentsTextarea"
+                cols="30"
+                rows="2"
+            ></textarea>
+            <br />
             <hr />
-            <div>
-                <h2 style="text-align: center">Schedule</h2>
-                <label for="timeInput">Preferred Meeting Time</label>
-                <input type="time" id="timeInput" name="preferredTime" /><br />
-                <label for="weekInput"> Preferred Meeting Day </label>
-                <input type="week" id="weekInput" name="preferredWeek" /> <br />
-                <label for="monthInput">Preferred Meeting Month</label>
-                <input type="month" id="monthInput" name="PreeferredMonth" />
-            </div>
+
+            <h2 style="text-align: center">Schedule</h2>
+            <label for="timeInput">Preferred Meeting Time</label>
+            <input type="time" id="timeInput" name="preferredTime" /><br />
+            <label for="weekInput"> Preferred Meeting Day </label>
+            <input type="week" id="weekInput" name="preferredWeek" /> <br />
+            <label for="monthInput">Preferred Meeting Month</label>
+            <input type="month" id="monthInput" name="PreeferredMonth" />
+
             <hr />
-            <div>
-                <h2 style="text-align: center">Search</h2>
-                <label for="serchInput"
-                    >Search for articles <a href="https://google.com"></a
-                ></label>
-                <input type="search" id="serchInput" name="search" />
-                <hr />
-                <h2 style="text-align: center">Submit your application</h2>
-                <input type="submit" id="submitInput" name="submit" />
-                <input type="reset" id="resetInput" name="reset" />
-                <button>
-                    Sign Up Now <img src="./submit.png" alt="submit" />
-                </button>
-                <a href="https://turantech.com/">
-                    <img src="./study.png" alt="study" />
-                </a>
-            </div>
+
+            <h2 style="text-align: center">Search</h2>
+            <label for="serchInput"
+                >Search for articles <a href="https://google.com"></a
+            ></label>
+            <input type="search" id="serchInput" name="searchArticles" />
+            <hr />
+            <h2 style="text-align: center">Submit your application</h2>
+            <input type="submit" id="submitInput" name="submit" />
+
+            <input type="reset" id="resetInput" name="reset" />
+            <button>Sign Up Now <img src="./submit.png" alt="submit" /></button>
+            <a href="https://turantech.com/">
+                <img src="./study.png" alt="study" />
+            </a>
         </form>
     </body>
 </html>

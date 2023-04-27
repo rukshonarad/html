@@ -68,9 +68,19 @@
 
             <p>What is your gender?</p>
             <label for="female">Female</label>
-            <input type="radio" id="female" name="gender" />
+            <input
+                type="radio"
+                id="femaleRadioInput"
+                name="gender"
+                value="female"
+            />
             <label for="male">Male</label>
-            <input type="radio" id="male" name="gender" />
+            <input
+                type="radio"
+                id="maleRadioInput"
+                name="gender"
+                value="male"
+            />
             <hr />
 
             <h2 style="text-align: center">Account details</h2>
@@ -79,7 +89,7 @@
             <label for="textInput">User Name</label>
             <input
                 type="text"
-                id="textInput"
+                id="usernameInput"
                 required
                 name="userName"
                 placeholder="User Name"
@@ -98,12 +108,14 @@
             <label for="colorInput">Color:</label>
             <input type="color" id="colorInput" required name="favoriteColor" />
 
-            <label for="checkboxInput">Newsletter Subscription </label>
+            <label for="usernameSubscriptionCheckbox"
+                >Newsletter Subscription
+            </label>
             <input
                 type="checkbox"
                 required
-                id="checkboxInput"
-                name="Subscription"
+                id="usernameSubscription"
+                name="subscription"
             />
             <br />
 
@@ -161,13 +173,13 @@
             <hr />
 
             <h2 style="text-align: center">Search</h2>
-            <label for="serchInput"
+            <label for="searchInput"
                 >Search for articles <a href="https://google.com"></a
             ></label>
             <input type="search" id="serchInput" name="searchArticles" />
             <hr />
             <h2 style="text-align: center">Submit your application</h2>
-            <input type="submit" id="submitInput" name="submit" />
+            <input type="submit" id="submitInput" />
 
             <input type="reset" id="resetInput" name="reset" />
             <button>Sign Up Now <img src="./submit.png" alt="submit" /></button>

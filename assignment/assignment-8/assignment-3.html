@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-3</title>
+    </head>
+    <body>
+        <h1 style="text-align: center">Apply To our company</h1>
+        <form>
+            <label for="fullNameInput">Full Name</label>
+            <input
+                type="text"
+                id="fullNameInput"
+                name="fullName"
+                autofocus
+                required
+            />
+            <label for="phoneNumberInput">Contact Number</label>
+            <input
+                type="tel"
+                id="phoneNumberInput"
+                name="phoneNumber"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" name="email" required /> <br />
+            <hr />
+            <label for="commentTextarea">Reason for applying</label>
+            <textarea
+                name="comment"
+                id="commentTextarea"
+                cols="100"
+                rows="3"
+            ></textarea>
+            <br />
+            <hr />
+            <label for="fileInput">Upload your resume here</label>
+            <input
+                type="file"
+                required
+                id="fileInput"
+                name="resume"
+                accept="appication/pdf"
+            />
+            <label for="educationLevelSellect">Education Level</label>
+            <select name="educationLevel" id="educationLevelSellect">
+                <option value="HighSchool">High School</option>
+                <option value="BachelorDegree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Ph.D">Ph.D</option>
+            </select>
+            <br />
+            <label for="infoTextarea">Aditional Information</label>
+            <textarea
+                name="Information"
+                id="infoTextarea"
+                cols="100"
+                rows="2"
+            ></textarea>
+            <input type="submit" value="submit" />
+        </form>
+    </body>
+</html>

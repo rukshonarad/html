@@ -9,10 +9,11 @@
     </head>
     <body>
         <form>
-            <h1 style="text-align: center">Register to our company</h1>
+            <h1 style="text-align: center">Multi-Purpose HTML Form</h1>
+            <h2 style="text-align: center">Register to our company</h2>
             <hr />
             <h2 style="text-align: center">Personal information</h2>
-            <label for="fullNameInput">Full name</label>
+            <label for="fullNameInput">Full name:</label> <br />
             <input
                 type="text"
                 required
@@ -22,7 +23,7 @@
                 autofocus
             />
             <br />
-            <label for="emailInput">Email address</label>
+            <label for="emailInput">Email address:</label> <br />
             <input
                 type="email"
                 id="emailInput"
@@ -32,7 +33,7 @@
             />
             <br />
 
-            <label for="phoneInput">Phone number</label>
+            <label for="phoneInput">Phone number:</label> <br />
             <input
                 type="tel"
                 placeholder="Phone number"
@@ -42,7 +43,7 @@
                 autofocus
             />
             <br />
-            <label for="dobInput">Date of birthd</label>
+            <label for="dobInput">Date of birth:</label> <br />
             <input
                 type="date"
                 required
@@ -51,7 +52,8 @@
                 max="01-01-1945"
                 min="01-01-2000"
             />
-            <label for="ageInput">Age</label>
+            <br />
+            <label for="ageInput">Your Age:</label> <br />
             <input
                 type="number"
                 max="60"
@@ -72,7 +74,7 @@
             <h2 style="text-align: center">Account details</h2>
             <hr />
 
-            <label for="textInput">User Name</label>
+            <label for="textInput">User Name:</label> <br />
             <input
                 type="text"
                 id="textInput"
@@ -81,7 +83,8 @@
                 placeholder="User Name"
             />
             <br />
-            <label for="passwordInput">Password:</label>
+            <label for="passwordInput">Password: (must be 10 characters)</label>
+            <br />
             <input
                 type="password"
                 id="passwordInput"
@@ -90,8 +93,9 @@
                 name="password"
             />
 
-            <label for="colorInput">Color:</label>
+            <label for="colorInput">Favorite Color:</label>
             <input type="color" id="colorInput" required name="favoriteColor" />
+            <br />
 
             <label for="checkboxInput">Newsletter Subscription </label>
             <input
@@ -117,10 +121,16 @@
             <br />
 
             <label for="urlInput">Location</label>
-            <input type="url" id="urlInput" name="location" required />
-            <label for="homepageInput">Add your homepage:</label>
-            <input type="url" id="homepageInput" name="homepage" />
-            <br />
+            <label for="urlInput">Insert Website:</label>
+            <input
+                type="url"
+                id="urlInput"
+                name="website"
+                placeholder="https://example.com"
+                pattern="https://.*"
+                size="30"
+                required
+            />
             <hr />
             <h2 style="text-align: center">Feedback</h2>
 
@@ -144,18 +154,43 @@
             <br />
             <hr />
             <h2 style="text-align: center">Schedule</h2>
-            <label for="timeInput">Preferred Meeting Time</label>
-            <input type="time" id="timeInput" name="preferredTime" /><br />
-            <label for="weekInput"> Preferred Meeting Day </label>
-            <input type="week" id="weekInput" name="preferredWeek" /> <br />
-            <label for="monthInput">Preferred Meeting Month</label>
-            <input type="month" id="monthInput" name="PreeferredMonth" />
+            <label for="meetingTimeInput">Preferred Meeting Time</label>
+            <input
+                type="time"
+                id="meetingTimeInput"
+                name="meetingTime"
+                min="09:00"
+                max="18:00"
+                value="09:00"
+                required
+            />
+            <br />
+            <label for="meetingDayInput">Preferred Meeting Day</label>
+            <input
+                type="week"
+                id="meetingDayInput"
+                name="meetingDay"
+                value="2023-W18"
+                min="2023-W18"
+                max="2023-W30"
+                required
+            />
+            <br />
+            <label for="meetingMonthInput">Preferred Meeting Month</label>
+            <input
+                type="month"
+                id="meetingMonthInput"
+                name="meetingMonth"
+                min="2023-02"
+                max="2023-09"
+                value="2023-02"
+                required
+            />
             <hr />
             <h2 style="text-align: center">Search</h2>
-            <label for="serchInput"
-                >Search for articles <a href="https://google.com"></a
-            ></label>
-            <input type="search" id="serchInput" name="searchArticles" />
+            <label for="searchInput">Search for articles:</label>
+            <input type="search" id="searchInput" name="search" />
+            <input type="button" value="Search" />
             <hr />
             <h2 style="text-align: center">Submit your application</h2>
             <input type="submit" id="submitInput" name="submit" />

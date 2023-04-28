@@ -11,7 +11,7 @@
         <h1>Customer Feedback Survey</h1>
 
         <form>
-            <label for="ameInput">Name:</label>
+            <label for="nameInput">Name:</label>
             <input
                 type="text"
                 id="fullNameInput"
@@ -75,17 +75,17 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             /><br /><br />
 
-            <label for="contactMethodSellect">Preferred Contact Method:</label>
-            <select id="contactMethodSellect" name="contactMethod" required>
+            <label for="contactMethodSelect">Preferred Contact Method:</label>
+            <select id="contactMethodSelect" name="contactMethod" required>
                 <option value="Phone">Phone</option>
                 <option value="Email">Email</option>
             </select>
             <br /><br />
 
-            <label for="feedbackTexarea"
+            <label for="feedbackTextarea"
                 >Any Other Suggestions or Feedback:</label
             ><br />
-            <textarea id="feedbackTexarea" name="feedback"></textarea
+            <textarea id="feedbackTextarea" name="feedback"></textarea
             ><br /><br />
 
             <input type="submit" value="Submit" />

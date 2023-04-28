@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.5</title>
+    </head>
+    <body>
+        <h1>Support Ticket Submission</h1>
+
+        <form>
+            <label for="userNameInput">Name:</label>
+            <input
+                type="text"
+                id="userNameInput"
+                name="name"
+                required
+                autofocus
+            /><br /><br />
+
+            <label for="emailInput">Email:</label>
+            <input
+                type="email"
+                id="emailInput"
+                name="email"
+                required
+            /><br /><br />
+
+            <h2>Priority:</h2>
+            <input
+                type="radio"
+                id="lowRadioInput"
+                name="priority"
+                value="Low"
+                required
+            />
+            <label for="lowRadioInput">Low</label><br />
+            <input
+                type="radio"
+                id="mediumRadioInput"
+                name="priority"
+                value="Medium"
+                required
+            />
+            <label for="mediumRadioInput">Medium</label><br />
+            <input
+                type="radio"
+                id="highRadioInput"
+                name="priority"
+                value="High"
+                required
+            />
+            <label for="highRadioInput">High</label><br /><br />
+
+            <label for="categorySellect">Issue Category:</label>
+            <select id="categorySellect" name="category" required>
+                <option value="Technical Issue">Technical Issue</option>
+                <option value="Billing">Billing</option>
+                <option value="Account Management">Account Management</option>
+                <option value="Other">Other</option></select
+            ><br /><br />
+
+            <label for="descriptionTextarea">Issue Description:</label><br />
+            <textarea
+                id="descriptionTextarea"
+                name="description"
+                required
+            ></textarea
+            ><br /><br />
+
+            <label for="screenshotsInput">Relevant Screenshots:</label>
+            <input
+                type="file"
+                id="screenshotsInput"
+                name="screenshots"
+                accept="image/*"
+            /><br /><br />
+
+            <label for="additionalInfoTextarea"
+                >Additional Information or Steps to Reproduce:</label
+            ><br />
+            <textarea
+                id="additionalInfoTextarea"
+                name="additional-info"
+            ></textarea
+            ><br /><br />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

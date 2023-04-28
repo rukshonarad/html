@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.4</title>
+    </head>
+
+    <body>
+        <h1>Customer Feedback Survey</h1>
+
+        <form>
+            <label for="ameInput">Name:</label>
+            <input
+                type="text"
+                id="fullNameInput"
+                name="name"
+                required
+                autofocus
+            /><br /><br />
+
+            <label for="experienceInput">Overall Experience:</label><br />
+            <input
+                type="radio"
+                id="excellentInput"
+                name="experience"
+                value="Excellent"
+                required
+            />
+            <label for="excellentInput">Excellent</label><br />
+            <input
+                type="radio"
+                id="goodInput"
+                name="experience"
+                value="Good"
+                required
+            />
+            <label for="goodInput">Good</label><br />
+            <input
+                type="radio"
+                id="averageinput"
+                name="experience"
+                value="Average"
+                required
+            />
+            <label for="averageinput">Average</label><br />
+            <input
+                type="radio"
+                id="poorInput"
+                name="experience"
+                value="Poor"
+                required
+            />
+            <label for="poorInput">Poor</label><br />
+            <input
+                type="radio"
+                id="veryPoorInput"
+                name="experience"
+                value="Very Poor"
+                required
+            />
+            <label for="veryPoorInput">Very Poor</label><br /><br />
+
+            <label for="commentsTextarea">Additional Comments:</label><br />
+            <textarea id="commentsTextarea" name="comments" required></textarea
+            ><br /><br />
+
+            <label for="phoneNumberInput">Phone Number:</label>
+            <input
+                type="tel"
+                id="phoneNumberInput"
+                name="phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            /><br /><br />
+
+            <label for="contactMethodSellect">Preferred Contact Method:</label>
+            <select id="contactMethodSellect" name="contactMethod" required>
+                <option value="Phone">Phone</option>
+                <option value="Email">Email</option>
+            </select>
+            <br /><br />
+
+            <label for="feedbackTexarea"
+                >Any Other Suggestions or Feedback:</label
+            ><br />
+            <textarea id="feedbackTexarea" name="feedback"></textarea
+            ><br /><br />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

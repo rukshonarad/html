@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment-8.6</title>
+    </head>
+    <body>
+        <h1>Event RSVP</h1>
+
+        <form>
+            <label for="fullNameInput">Full Name:</label>
+            <input
+                type="text"
+                id="fullNameInput"
+                name="name"
+                required
+                autofocus
+            /><br /><br />
+
+            <label for="emailInput">Email:</label>
+            <input
+                type="email"
+                id="emailInput"
+                name="email"
+                required
+            /><br /><br />
+
+            <h2>Will You be Attending</h2>
+            <input
+                type="radio"
+                id="yesRadioInput"
+                name="attendance"
+                value="Yes"
+                required
+            />
+            <label for="yesRadioInput">Yes</label><br />
+            <input
+                type="radio"
+                id="noRadioInput"
+                name="attendance"
+                value="No"
+                required
+            />
+            <label for="noRadioInput">No</label><br /><br />
+
+            <label for="guestsNumberInput">Number of Guests:</label>
+            <input
+                type="number"
+                id="guestsNumberInput"
+                name="guests"
+                required
+            /><br /><br />
+
+            <label for="mealSellect">Meal Preference:</label>
+            <select id="mealSellect" name="meal" required>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Gluten-Free">Gluten-Free</option></select
+            ><br /><br />
+
+            <h3>Additional Notes or Requests:</h3>
+            <br />
+            <label for="notesTextarea"></label>
+            <textarea id="notes" id="notesTextarea" name="notes"></textarea
+            ><br /><br />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

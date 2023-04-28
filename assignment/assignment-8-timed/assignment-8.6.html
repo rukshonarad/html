@@ -14,7 +14,7 @@
             <input
                 type="text"
                 id="fullNameInput"
-                name="name"
+                name="fullName"
                 required
                 autofocus
             /><br /><br />
@@ -31,7 +31,7 @@
             <input
                 type="radio"
                 id="yesRadioInput"
-                name="attendance"
+                name="attendanceStatus"
                 value="Yes"
                 required
             />
@@ -49,12 +49,12 @@
             <input
                 type="number"
                 id="guestsNumberInput"
-                name="guests"
+                name="numberOfGuests"
                 required
             /><br /><br />
 
-            <label for="mealSellect">Meal Preference:</label>
-            <select id="mealSellect" name="meal" required>
+            <label for="mealSelect">Meal Preference:</label>
+            <select id="mealSelect" name="meal" required>
                 <option value="Vegetarian">Vegetarian</option>
                 <option value="Non-Vegetarian">Non-Vegetarian</option>
                 <option value="Vegan">Vegan</option>
@@ -64,7 +64,7 @@
             <h3>Additional Notes or Requests:</h3>
             <br />
             <label for="notesTextarea"></label>
-            <textarea id="notes" id="notesTextarea" name="notes"></textarea
+            <textarea id="notesTextarea" name="aditionalNotes"></textarea
             ><br /><br />
 
             <input type="submit" value="Submit" />

@@ -17,15 +17,10 @@
                 name="fullName"
                 required
                 autofocus
-            /><br /><br />
+            /><br />
 
             <label for="emailInput">Email:</label>
-            <input
-                type="email"
-                id="emailInput"
-                name="email"
-                required
-            /><br /><br />
+            <input type="email" id="emailInput" name="email" required /><br />
 
             <h2>Will You be Attending</h2>
             <input
@@ -39,7 +34,7 @@
             <input
                 type="radio"
                 id="noRadioInput"
-                name="attendance"
+                name="attendanceStatus"
                 value="No"
                 required
             />
@@ -51,7 +46,7 @@
                 id="guestsNumberInput"
                 name="numberOfGuests"
                 required
-            /><br /><br />
+            /><br />
 
             <label for="mealSelect">Meal Preference:</label>
             <select id="mealSelect" name="meal" required>
@@ -59,13 +54,12 @@
                 <option value="Non-Vegetarian">Non-Vegetarian</option>
                 <option value="Vegan">Vegan</option>
                 <option value="Gluten-Free">Gluten-Free</option></select
-            ><br /><br />
+            ><br />
 
             <h3>Additional Notes or Requests:</h3>
             <br />
             <label for="notesTextarea"></label>
-            <textarea id="notesTextarea" name="aditionalNotes"></textarea
-            ><br /><br />
+            <textarea id="notesTextarea" name="aditionalNotes"></textarea><br />
 
             <input type="submit" value="Submit" />
         </form>

@@ -18,69 +18,83 @@
                 name="name"
                 required
                 autofocus
-            /><br /><br />
+            /><br />
+            <div>
+                <hr />
+                <h2>Overall Experience:</h2>
+                <input
+                    type="radio"
+                    id="excellentRadioInput"
+                    name="experience"
+                    value="Excellent"
+                    required
+                />
+                <label for="excellentRadioInput">Excellent</label><br />
+                <input
+                    type="radio"
+                    id="goodRadioInput"
+                    name="experience"
+                    value="Good"
+                    required
+                />
+                <label for="goodRadioInput">Good</label><br />
+                <input
+                    type="radio"
+                    id="averageRadioinput"
+                    name="experience"
+                    value="Average"
+                    required
+                />
+                <label for="averageRadioInput">Average</label><br />
+                <input
+                    type="radio"
+                    id="poorRadioInput"
+                    name="experience"
+                    value="Poor"
+                    required
+                />
+                <label for="poorRadioInput">Poor</label><br />
+                <input
+                    type="radio"
+                    id="veryPoorRadioInput"
+                    name="experience"
+                    value="Very Poor"
+                    required
+                />
+                <label for="veryPoorRadioInput">Very Poor</label>
+            </div>
+            <div>
+                <hr />
+                <label for="commentsTextarea">Additional Comments:</label><br />
+                <textarea
+                    id="commentsTextarea"
+                    name="comments"
+                    required
+                    rows="5"
+                    cols="30"
+                ></textarea
+                ><br />
 
-            <label for="experienceInput">Overall Experience:</label><br />
-            <input
-                type="radio"
-                id="excellentInput"
-                name="experience"
-                value="Excellent"
-                required
-            />
-            <label for="excellentInput">Excellent</label><br />
-            <input
-                type="radio"
-                id="goodInput"
-                name="experience"
-                value="Good"
-                required
-            />
-            <label for="goodInput">Good</label><br />
-            <input
-                type="radio"
-                id="averageinput"
-                name="experience"
-                value="Average"
-                required
-            />
-            <label for="averageinput">Average</label><br />
-            <input
-                type="radio"
-                id="poorInput"
-                name="experience"
-                value="Poor"
-                required
-            />
-            <label for="poorInput">Poor</label><br />
-            <input
-                type="radio"
-                id="veryPoorInput"
-                name="experience"
-                value="Very Poor"
-                required
-            />
-            <label for="veryPoorInput">Very Poor</label><br /><br />
+                <label for="phoneNumberInput">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="phoneNumberInput"
+                    name="phone"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="XXX-XXX-XXXX"
+                /><br />
+                <br />
 
-            <label for="commentsTextarea">Additional Comments:</label><br />
-            <textarea id="commentsTextarea" name="comments" required></textarea
-            ><br /><br />
-
-            <label for="phoneNumberInput">Phone Number:</label>
-            <input
-                type="tel"
-                id="phoneNumberInput"
-                name="phone"
-                required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            /><br /><br />
-
-            <label for="contactMethodSelect">Preferred Contact Method:</label>
-            <select id="contactMethodSelect" name="contactMethod" required>
-                <option value="Phone">Phone</option>
-                <option value="Email">Email</option>
-            </select>
-            <br /><br />
+                <label for="contactMethodSelect"
+                    >Preferred Contact Method:</label
+                >
+                <select id="contactMethodSelect" name="contactMethod" required>
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <br />
 
             <label for="feedbackTextarea"
                 >Any Other Suggestions or Feedback:</label

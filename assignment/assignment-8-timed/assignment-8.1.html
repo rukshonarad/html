@@ -9,11 +9,12 @@
     <body>
         <h1>Register to a newsletter</h1>
         <form>
-            <label for="userNameInput">Name:</label>
+            <label for="fullNameInput">Full Name:</label>
             <input
                 type="text"
-                id="userNameInput"
-                name="userName"
+                id="fullNameInput"
+                name="fullName"
+                placeholder="Your Full Name "
                 required
                 autofocus
             /><br />
@@ -29,56 +30,55 @@
             /><br />
 
             <label for="emailInput">Email:</label>
-            <input type="email" id="emailInput" name="email" required /><br />
-
-            <label>Preferred Topics:</label><br />
             <input
-                type="checkbox"
-                id="sportsInput"
-                name="topics"
-                value="Sports"
-            />
-            <label for="sportsInput">Sports</label><br />
-            <input
-                type="checkbox"
-                id="technologyInput"
-                name="topics"
-                value="Technology"
-            />
-            <label for="technologyInput">Technology</label><br />
-            <input
-                type="checkbox"
-                id="travelInput"
-                name="topics"
-                value="Travel"
-            />
-            <label for="travelInput">Travel</label><br />
+                type="email"
+                id="emailInput"
+                name="email"
+                required
+                placeholder="Your email"
+            /><br />
+            <div>
+                <p>Select your preferred topics:</p>
+                <input type="checkbox" id="sportCheckboxInput" name="sports" />
+                <label for="sportCheckboxInput">Sports</label>
+                <input
+                    type="checkbox"
+                    id="technologyCheckboxInput"
+                    name="technology"
+                />
+                <label for="technologyCheckboxInput">Technology</label>
+                <input type="checkbox" id="travelCheckboxInput" name="travel" />
+                <label for="travelCheckboxInput">Travel</label>
+            </div>
+            <hr />
             <h2>Newsletter Frequency:</h2>
             <input
                 type="radio"
-                id="dailyInput"
+                id="dailyRadioInput"
                 name="frequency"
                 value="Daily"
             />
-            <label for="dailyInput">Daily</label> <br />
+            <label for="dailyRadioInput">Daily</label> <br />
 
             <input
                 type="radio"
-                id="weeklyInput"
+                id="weeklyRadioInput"
                 name="frequency"
                 value="Weekly"
             />
-            <label for="weeklyInput">Weekly</label><br />
+            <label for="weeklyradioInput">Weekly</label><br />
             <input
                 type="radio"
-                id="monthlyInput"
+                id="monthlyRadioInput"
                 name="frequency"
                 value="Monthly"
             />
-            <label for="monthlyInput">Monthly</label><br />
+            <label for="monthlyRadioInput">Monthly</label><br />
 
-            <label for="emailFormat">Email Format:</label>
-            <select id="emailFormat" name="emailFormat">
+            <label for="emailFormatSelect"
+                >Select your prerferred email format:</label
+            >
+            <select id="emailFormatSelect" name="emailFormat">
                 <option value="HTML">HTML</option>
                 <option value="Plain Text">Plain Text</option></select
             ><br /><br />

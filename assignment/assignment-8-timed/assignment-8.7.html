@@ -31,10 +31,10 @@
             <input
                 type="file"
                 id="photoInput"
-                name="photo"
-                accept="image/*"
+                name="personalPhoto"
+                accept="image/jpeg"
                 required
-            /><br /><br />
+            /><br />
 
             <label for="agreementCheckboxInput"
                 >I agree to the contest terms and conditions:</label
@@ -44,7 +44,7 @@
                 id="agreementCheckboxInput"
                 name="agreement"
                 required
-            /><br /><br />
+            /><br />
 
             <label for="countrySelect">Country:</label>
             <select id="countrySelect" name="country" required>
@@ -52,16 +52,15 @@
                 <option value="Canada">Canada</option>
                 <option value="United Kingdom">United Kingdom</option>
                 <option value="Australia">Australia</option></select
-            ><br /><br />
-
+            ><br />
             <label for="descriptionTextarea">Photo Description or Story:</label
             ><br />
             <textarea
                 id="descriptionTextarea"
                 name="description"
                 required
-            ></textarea
-            ><br /><br />
+            ></textarea>
+            <br />
 
             <input type="submit" value="Submit" />
         </form>

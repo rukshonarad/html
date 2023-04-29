@@ -9,14 +9,15 @@
     <body>
         <form>
             <h1>Quiz</h1>
-            <label for="nameInput">Name:</label>
+            <label for="FullNameInput">Full Name:</label>
             <input
                 type="text"
-                id="nameInput"
-                name="userName"
+                id="fullNameInput"
+                name="fullName"
                 required
                 autofocus
-            /><br /><br />
+                placeholder="Your Full Name"
+            /><br />
 
             <label for="emailInput">Email:</label>
             <input
@@ -24,17 +25,18 @@
                 id="emailInput"
                 name="email"
                 required
-            /><br /><br />
+                placeholder="Your Email"
+            /><br />
 
-            <label for="confidenceRangeInput">Confidence Level (1-10):</label>
+            <label for="confidenceLevelInput">Confidence Level </label>
             <input
                 type="range"
-                id="confidenceRangeInput"
+                id="confidenceLevelInput"
                 name="confidenceLevel"
                 min="1"
                 max="10"
                 required
-            /><br /><br />
+            /><br />
 
             <label for="ageInput">Age</label>
             <input
@@ -44,61 +46,45 @@
                 min="18"
                 max="99"
                 required
-            /><br /><br />
+            /><br />
 
             <h2>Favorite Quiz Categories:</h2>
             <br />
+            <input type="checkbox" id="historyCheckboxinput" name="history" />
+            <label for="historyCheckboxinput">History</label><br />
+            <input type="checkbox" id="scienceCheckboxInput" name="science" />
+            <label for="scienceCheckboxInput">Science</label><br />
+            <input type="checkbox" id="sportsCheckboxInput" name="sports" />
+            <label for="sportsCheckboxInput">Sports</label><br />
             <input
                 type="checkbox"
-                id="historyCheckbox"
-                name="categories"
-                value="History"
+                id="literatureCheckboxInput"
+                name="literature"
             />
-            <label for="historyCheckbox">History</label><br />
-            <input
-                type="checkbox"
-                id="scienceCheckbox"
-                name="categories"
-                value="Science"
-            />
-            <label for="scienceCheckbox">Science</label><br />
-            <input
-                type="checkbox"
-                id="sportsCheckboxInput"
-                name="categories"
-                value="Sports"
-            />
-            <label for="sportsCheckbox">Sports</label><br />
-            <input
-                type="checkbox"
-                id="literatureCheckbox"
-                name="categories"
-                value="Literature"
-            />
-            <label for="literatureCheckbox">Literature</label><br /><br />
+            <label for="literatureCheckboxInput">Literature</label><br />
             <h2>Preferred Quiz Format</h2>
             <br />
             <input
                 type="radio"
-                id="multipleChoice"
+                id="multipleChoiceRadioInput"
                 name="quizFormat"
                 value="Multiple Choice"
             />
-            <label for="multipleChoice">Multiple Choice</label><br />
+            <label for="multipleChoiceRadioInput">Multiple Choice</label><br />
             <input
                 type="radio"
-                id="trueFalse"
+                id="trueFalseRadioInput"
                 name="quizFormat"
                 value="True/False"
             />
-            <label for="trueFalse">True/False</label><br />
+            <label for="trueFalseRadioInput">True/False</label><br />
             <input
                 type="radio"
-                id="fillBlank"
+                id="fillBlankRadioInput"
                 name="quizFormat"
                 value="Fill in the Blank"
             />
-            <label for="fillBlank">Fill in the Blank</label><br /><br />
+            <label for="fillBlankRadioInput">Fill in the Blank</label><br />
 
             <label for="timezone">Time Zone:</label>
             <select id="timezone" name="timezone">
@@ -107,7 +93,7 @@
                 <option value="UTC+12">UTC+12</option>
                 <option value="UTC+13">UTC+13</option>
                 <option value="UTC+14">UTC+14</option></select
-            ><br /><br />
+            ><br />
 
             <label for="feedbackTextarea"
                 >Additional Feedback or Suggestions:</label

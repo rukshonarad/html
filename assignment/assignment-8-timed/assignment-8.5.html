@@ -17,21 +17,16 @@
                 name="name"
                 required
                 autofocus
-            /><br /><br />
+            /><br />
 
             <label for="emailInput">Email:</label>
-            <input
-                type="email"
-                id="emailInput"
-                name="email"
-                required
-            /><br /><br />
+            <input type="email" id="emailInput" name="email" required /><br />
 
             <h2>Priority:</h2>
             <input
                 type="radio"
                 id="lowRadioInput"
-                name="priority"
+                name="ticketPriority"
                 value="Low"
                 required
             />
@@ -39,7 +34,7 @@
             <input
                 type="radio"
                 id="mediumRadioInput"
-                name="priority"
+                name="ticketPriority"
                 value="Medium"
                 required
             />
@@ -47,7 +42,7 @@
             <input
                 type="radio"
                 id="highRadioInput"
-                name="priority"
+                name="ticketPriority"
                 value="High"
                 required
             />
@@ -59,7 +54,7 @@
                 <option value="Billing">Billing</option>
                 <option value="Account Management">Account Management</option>
                 <option value="Other">Other</option></select
-            ><br /><br />
+            ><br />
 
             <label for="descriptionTextarea">Issue Description:</label><br />
             <textarea
@@ -67,7 +62,7 @@
                 name="description"
                 required
             ></textarea
-            ><br /><br />
+            ><br />
 
             <label for="screenshotsInput">Relevant Screenshots:</label>
             <input
@@ -75,8 +70,7 @@
                 id="screenshotsInput"
                 name="screenshots"
                 accept="image/*"
-            /><br /><br />
-
+            /><br />
             <label for="additionalInfoTextarea"
                 >Additional Information or Steps to Reproduce:</label
             ><br />
@@ -84,7 +78,7 @@
                 id="additionalInfoTextarea"
                 name="additionalInfo"
             ></textarea>
-            <br /><br />
+            <br />
 
             <input type="submit" value="Submit" />
         </form>

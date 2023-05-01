@@ -39,58 +39,77 @@
             /><br />
             <div>
                 <p>Select your preferred topics:</p>
-                <input type="checkbox" id="sportCheckboxInput" name="sports" />
-                <label for="sportCheckboxInput">Sports</label>
                 <input
                     type="checkbox"
-                    id="technologyCheckboxInput"
-                    name="technology"
+                    id="preferredTopicSportsCheckbox"
+                    name="isSportsPreferred"
                 />
-                <label for="technologyCheckboxInput">Technology</label>
-                <input type="checkbox" id="travelCheckboxInput" name="travel" />
-                <label for="travelCheckboxInput">Travel</label>
+                <label for="preferredTopicSportsCheckbox">Sports</label>
+                <input
+                    type="checkbox"
+                    id="preferredTopicTechnologyCheckbox"
+                    name="istechnologyPreferred"
+                />
+                <label for="preferredTopicTechnologyCheckbox">Technology</label>
+                <input
+                    type="checkbox"
+                    id="preferredTopicTravelCheckbox"
+                    name="isTravelPreferred"
+                />
+                <label for="preferredTopicTravelCheckbox">Travel</label>
             </div>
             <hr />
-            <h2>Newsletter Frequency:</h2>
-            <input
-                type="radio"
-                id="dailyRadioInput"
-                name="frequency"
-                value="Daily"
-            />
-            <label for="dailyRadioInput">Daily</label> <br />
 
-            <input
-                type="radio"
-                id="weeklyRadioInput"
-                name="frequency"
-                value="Weekly"
-            />
-            <label for="weeklyRadioInput">Weekly</label><br />
-            <input
-                type="radio"
-                id="monthlyRadioInput"
-                name="frequency"
-                value="Monthly"
-            />
-            <label for="monthlyRadioInput">Monthly</label><br />
+            <div>
+                <p>Frequency of the newsletter:</p>
+                <input
+                    type="radio"
+                    id="dailyNewsletterFrequencyRadio"
+                    name="newsletterFrequency"
+                    value="Daily"
+                />
+                <label for="dailyNewsletterFrequencyRadio">Daily</label>
 
-            <label for="emailFormatSelect"
-                >Select your prerferred email format:</label
-            >
-            <select id="emailFormatSelect" name="emailFormat">
-                <option value="HTML">HTML</option>
-                <option value="Plain Text">Plain Text</option></select
-            ><br /><br />
+                <input
+                    type="radio"
+                    id="weeklyNewsletterFrequencyRadio"
+                    name="newsletterFrequency"
+                    value="Weekly"
+                />
+                <label for="weeklyNewsletterFrequencyRadio">Weekly</label>
 
-            <label for="commentsTextarea">Comments or Suggestions:</label><br />
-            <textarea
-                id="commentsTextarea"
-                name="comments"
-                rows="4"
-                cols="50"
-            ></textarea
-            ><br />
+                <input
+                    type="radio"
+                    id="monthlyNewsletterFrequencyRadio"
+                    name="newsletterFrequency"
+                    value="Monthly"
+                />
+                <label for="monthlyNewsletterFrequencyRadio">Monthly</label>
+            </div>
+            <hr />
+
+            <div>
+                <label for="emailFormatSelect"
+                    >Select your preferred email format</label
+                >
+                <select name="emailFormat" id="emailFormatSelect" required>
+                    <option value="HTML">HTML</option>
+                    <option value="Plain Text">Plain Text</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="commentsTextarea"
+                    >Additional comments or suggestions</label
+                >
+                <textarea
+                    name="comments"
+                    id="commentsTextarea"
+                    cols="30"
+                    rows="5"
+                ></textarea>
+            </div>
+            <hr />
 
             <input type="submit" value="Submit" />
         </form>

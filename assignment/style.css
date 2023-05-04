@@ -1,18 +1,9 @@
 * {
     margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
 } /* Header */
-ul {
-    list-style-type: none;
-}
-ol {
-    list-style-type: none;
-}
-li {
-    list-style-type: none;
-}
-h1 {
+ol h1 {
     color: rgb(73, 62, 66);
     font-size: 30px;
     text-align: center;
@@ -26,7 +17,6 @@ body {
 a {
     color: rgb(49, 46, 46);
     font-size: 20px;
-    text-decoration: none;
 }
 .background {
     width: auto;
@@ -34,9 +24,9 @@ a {
     background-image: url(./pink-1.jpg);
     border-radius: 200px;
 }
-
+/* 
 /* Assignments */
-.assignments {
+/* .assignments {
     display: flex;
     margin-top: 25px;
     gap: 30px;
@@ -102,4 +92,4 @@ a {
     background-color: #f6d4ee;
     margin-left: 500px;
     margin-top: 20px;
-}
+} */
